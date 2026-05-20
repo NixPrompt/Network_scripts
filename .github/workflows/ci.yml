@@ -31,5 +31,10 @@ jobs:
       - name: Smoke test CLI help
         run: python monitor.py --help
 
+      - name: Smoke test dashboard JavaScript
+        run: |
+          node --check dashboard/server.mjs
+          node --check dashboard/app.js
+
       - name: Run tests
         run: python -m pytest

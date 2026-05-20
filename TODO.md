@@ -105,6 +105,7 @@ Goal: make FoxOps-CLI look and feel like a production-quality security/NOC tool.
   - architecture overview
   - trust-boundary guide
   - sample runbook workflows
+  - local dashboard demo
   - "What this tool does not prove"
   - screenshots or terminal captures
 - Add release hygiene:
