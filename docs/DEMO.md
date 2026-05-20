@@ -55,7 +55,25 @@ What to look for:
 - `groups.host_summaries` gives per-host status counts
 - `results` keeps the flat result list for automation
 
-## 5. Optional Windows Hardening Snapshot
+## 5. Open The Dashboard Demo
+
+```powershell
+node .\dashboard\server.mjs
+```
+
+Open:
+
+```text
+http://localhost:8000/dashboard/
+```
+
+What to say:
+
+- The dashboard renders FoxOps JSON artifacts.
+- Operators can load a JSON file or paste run output.
+- It is a local demo view, not a remote service.
+
+## 6. Optional Windows Hardening Snapshot
 
 Run from Windows PowerShell:
 
@@ -68,20 +86,6 @@ What to say:
 - This is read-only.
 - It checks selected local account and password-policy posture.
 - It does not remediate, certify security, or claim compliance.
-
-## 6. Optional Linux Hardening Snapshot
-
-Run from Linux or WSL:
-
-```bash
-python ./monitor.py --linux-hardening --output json
-```
-
-What to say:
-
-- This is read-only.
-- It checks Linux-native files and commands only.
-- Under WSL, it reports WSL Linux state, not Windows posture.
 
 ## Cleanup
 

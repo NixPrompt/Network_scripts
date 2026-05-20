@@ -64,6 +64,7 @@ perform remediation.
 |-- network_checks.py     # DNS, ping, TCP port, HTTP, and TLS checks
 |-- output_format.py      # Text and JSON renderers
 |-- result_policy.py      # Host normalization, summaries, exit codes
+|-- dashboard/            # Static run-evidence dashboard demo
 |-- examples/
 |   |-- hosts.txt
 |   |-- sample-output.json
@@ -90,6 +91,14 @@ Run a network check:
 ```powershell
 python .\monitor.py --host google.com --port 443
 ```
+
+Open the local evidence dashboard demo:
+
+```powershell
+node .\dashboard\server.mjs
+```
+
+Then open `http://localhost:8000/dashboard/`.
 
 Run multiple host checks:
 
